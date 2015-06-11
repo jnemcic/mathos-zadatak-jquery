@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/vader/jquery-ui.css">
+<link rel="stylesheet" href="assets/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<title>To-do Lista</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header"><h1>Don't forget the milk!</h1></header>
+	<table class="table table-hover table-bordered"> 
+		<thead>
+		<tr class="warning">
+			<th>Na čekanju</th>
+			<th>Izvodi se</th>
+			<th>Izvršeno</th>
+		</tr>
+		</thead>
+		<tbody id="tasks">
+		</tbody>
+	</table>
+	<button class="btn btn-success" id="addNew">Dodaj novi zadatak</button>
+
+<div id="dialog" title="Novi zadatak"> 
+<form>
+	<input type="hidden" name="task" value="3">
+	<div class="form-group">
+		<input type="text" class="form-control" id="zadatak" name="zad" placeholder="Zadatak">
+	
+		<input type="textarea" class="form-control" id="zadatak" name="zad" placeholder="Opis">
+	
+	    <input id="datepicker" placeholder="Datum" /><br>
+	</div>
+</form>
+</div>
+
+
+<div id="change" title="Izmjena zadataka"> 
+<form>
+	<input type="hidden" name="zad_ch" value="3">
+	<div class="form-group">
+		<input type="text" class="form-control" name="name" placeholder="Zadatak">
+	</div>
+	<div class="form-group">
+	    <input type="text" class="form-control" name="opis" placeholder="Opis"><br>
+	</div>
+</form>
+</div>
+
+			<script type="text/javascript">
+                $( "#datepicker" ).datepicker();
+                $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+            </script>
+</div>
+
+<script src="assets/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="assets/script.js"></script>
+
+
+</body>
+</html>

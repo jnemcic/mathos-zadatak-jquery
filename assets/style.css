@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #27655F !important;
+    border: 0 !important;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.header{
+    text-align: center;
+    color: #fff;
+}
+
+.dialog{
+	padding: 3%;
+    background-color: #FFE0C2;
+    border-radius: 1%;
+}
+
+.form-group  input{
+    width: 96%;
+    margin: 1% 2%;
+	max-width: 96%;
+	padding: 2%;
+	margin: 2%;
+}
+
+@media all and (max-width: 55em) {
+	.wrapper{
+		width: 75%;
+	}
+}
+
+@media all and (max-width: 25em) {
+	.wrapper{
+		width: 95%;
+	}
+}
